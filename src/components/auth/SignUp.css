@@ -1,0 +1,11 @@
+@media all and (min-width: 480px) {
+    .SignUp {
+      margin: 0 auto;
+      max-width: 320px;
+      padding: 20px 0;
+    }
+
+    .SignUp h1{
+        text-align: center;
+    }
+}

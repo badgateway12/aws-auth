@@ -1,0 +1,17 @@
+@media all and (min-width: 480px) {
+    .SignIn {
+      margin: 0 auto;
+      max-width: 320px;
+      padding: 20px 0;
+    }
+
+    .SignIn h1{
+        text-align: center;
+    }
+
+    .SignIn .Footer{
+        margin-top: 20px;
+        line-height: 60%;
+        text-align: right;
+    }
+}
