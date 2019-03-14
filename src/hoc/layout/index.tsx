@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Aux } from '../aux/Aux'
+import { Aux } from '../aux'
 import { ErrorBoundary } from '../error-boundary'
 import { Navbar } from '../../components/ui/toolbar/navbar'
 
