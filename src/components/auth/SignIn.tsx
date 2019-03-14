@@ -1,6 +1,5 @@
 import * as React from 'react';
 import './SignIn.css';
-import { ErrorBoundary } from '../../components/error-boundary/error-boundary';
 import { SignInForm } from '../../containers/auth/sign-in-form';
 import { SignUpLink } from './SignUp';
 import { SignInWithGoogle } from '../ui/buttons/SignInWithGoogle';

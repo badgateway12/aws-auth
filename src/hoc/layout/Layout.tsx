@@ -1,6 +1,8 @@
-import * as React from 'react';
-import { Aux } from '../aux/Aux';
-import { Navbar } from '../../containers/navbar/Navbar';
+import * as React from 'react'
+import { Aux } from '../aux/Aux'
+import { ErrorBoundary } from '../error-boundary'
+import { Navbar } from '../../components/ui/toolbar/navbar'
+
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -8,10 +10,12 @@ type LayoutProps = {
 
 export const Layout = (props: LayoutProps) =>
   <Aux>
-    <Navbar />
+    <ErrorBoundary>
+      <Navbar authenticated={false} />
+    </ErrorBoundary>
     <main>
       {props.children}
     </main>
-  </Aux>;
+  </Aux>
 
-Layout.displayName = 'Layout';
+Layout.displayName = 'Layout'

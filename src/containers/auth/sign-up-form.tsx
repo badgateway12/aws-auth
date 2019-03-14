@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Auth } from 'aws-amplify';
 import { Button, Form, FormGroup, FormControl, FormLabel, FormText } from 'react-bootstrap';
-import { LoaderButton } from '../../components/ui/buttons/LoaderButton';
 import { FaUser, FaEnvelopeSquare, FaKey } from 'react-icons/fa';
 import * as routes from '../../constants/routes';
 
@@ -96,15 +95,6 @@ export class SignUpForm extends React.Component<SignUpFormProps, SignUpFormState
             onChange={(event: any) => this.setStateWithEvent(event, "confirmation_code")} />
           <FormText>Please check your email for the code.</FormText>
         </FormGroup>
-        <LoaderButton
-          block
-          size="lg"
-          className="bg-primary"
-          disabled={isInvalid}
-          type="submit"
-          isLoading={isLoading}
-          text="Verify"
-          loadingText="Verifying…"/>
       </Form>
     );
   }

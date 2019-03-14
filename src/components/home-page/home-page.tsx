@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ErrorBoundary } from '../error-boundary/error-boundary';
+import { ErrorBoundary } from '../../hoc/error-boundary';
 import ls from 'local-storage';
 
 

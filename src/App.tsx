@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes } from './routes/router';
-import { Layout } from './hoc/layout/Layout';
+import { Layout } from './hoc/layout/layout';
 
 interface AppProps {
   history?: any;
